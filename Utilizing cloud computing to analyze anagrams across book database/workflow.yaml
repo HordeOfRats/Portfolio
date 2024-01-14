@@ -1,0 +1,30 @@
+main:
+    steps:
+    - clearOldData:
+        call: http.post
+        args:
+            url: https://jack-clear-data-iyvvmy7hfa-nw.a.run.app
+
+    - getBooksToRead:
+        call: http.get
+        args:
+            url: https://jack-get-blobs-iyvvmy7hfa-nw.a.run.app
+        result: books_to_read
+
+    - read_books:
+        parallel:
+            for:
+                value: blob
+                in: ${books_to_read.body}
+                steps:
+                    - find_anagrams:
+                        call: http.post
+                        args:
+                            url: https://jack-map-anagrams-iyvvmy7hfa-nw.a.run.app
+                            body:
+                                toRead: ${blob}
+    
+    - merge_dictionaries:
+        call: http.post
+        args:
+            url: https://jack-merge-dictionaries-iyvvmy7hfa-nw.a.run.app

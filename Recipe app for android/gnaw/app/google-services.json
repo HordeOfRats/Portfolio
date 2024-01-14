@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "547977179262",
+    "firebase_url": "https://gnaw-e0731-default-rtdb.firebaseio.com",
+    "project_id": "gnaw-e0731",
+    "storage_bucket": "gnaw-e0731.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:547977179262:android:42b1e88767b0362ba6a82f",
+        "android_client_info": {
+          "package_name": "com.example.gnaw"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "547977179262-ho04s0ov8l5tet3c2s5csvup2sr8o7pt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDK4JWBxjQ2AAdOXzKawvJmMvzzRr3W9lA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "547977179262-ho04s0ov8l5tet3c2s5csvup2sr8o7pt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
